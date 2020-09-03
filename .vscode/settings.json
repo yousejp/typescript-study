@@ -1,3 +1,10 @@
 {
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  "json.schemas": []
 }
