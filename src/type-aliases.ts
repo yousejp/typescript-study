@@ -7,7 +7,7 @@ const fooMojiretsu: Mojiretsu = 'Hello';
 
 const example1 = {
   name: 'Ham',
-  age: 43
+  age: 43,
 };
 
 type Profile = {
@@ -17,7 +17,12 @@ type Profile = {
 
 const example2: Profile = {
   name: 'Ham',
-  age: 43
+  age: 43,
 };
 
 type Profile2 = typeof example1;
+
+const example3: Profile2 = {
+  name: 'Ham',
+  age: 43,
+};

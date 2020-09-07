@@ -2,6 +2,8 @@ export {};
 
 enum Months {
   January = 1,
+  //上記は=1がないと0が設定される
+  //上から順番位
   February,
   March,
   April,
@@ -12,7 +14,7 @@ enum Months {
   September,
   October,
   November,
-  December
+  December,
 }
 
 console.log(Months.January);
@@ -33,15 +35,19 @@ enum COLORS {
   GREEN = '#008000',
   BLUE = '#0000FF',
   //  YELLOW = '#FFFF00',
-  BLACK = '#000000'
+  BLACK = '#000000',
 }
 
 let green = COLORS.GREEN;
 console.log({ green });
+// let yellow = COLORS.YELLOW;
+//ここではYELLOWがないのでエラーになる
 
 enum COLORS {
   YELLOW = '#FFFF00',
-  GRAY = '#808080'
+  GRAY = '#808080',
 }
 
 COLORS.YELLOW;
+let yellow = COLORS.YELLOW;
+console.log({ yellow });

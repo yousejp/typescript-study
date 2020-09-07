@@ -1,5 +1,10 @@
 export {};
 
+// let dayOfTheWeek: string = '日';
+// dayOfTheWeek = '月';
+// dayOfTheWeek = '31';
+// 曜日の7種類以外の文字列を弾く
+
 let dayOfTheWeek: '日' | '月' | '火' | '水' | '木' | '金' | '土' = '日';
 dayOfTheWeek = '月';
 // dayOfTheWeek = '31';

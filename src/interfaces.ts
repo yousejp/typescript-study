@@ -12,5 +12,8 @@ interface ObjectInterface {
 
 let object: ObjectInterface = {
   name: 'Ham-san',
-  age: 43
+  age: 43,
 };
+
+//interfaceでもオブジェクトに型を付けれる
+//二つの違いはクラスを使用したときにわかるので後回し

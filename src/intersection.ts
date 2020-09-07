@@ -9,11 +9,11 @@ type Batter1 = {
 };
 
 const DaimajinSasaki: Pitcher1 = {
-  throwingSpeed: 154
+  throwingSpeed: 154,
 };
 
 const OchiaiHiromitsu: Batter1 = {
-  battingAverage: 0.367
+  battingAverage: 0.367,
 };
 
 // type TwoWayPlayer = {
@@ -22,8 +22,9 @@ const OchiaiHiromitsu: Batter1 = {
 // };
 
 type TwoWayPlayer = Pitcher1 & Batter1;
+//既存の型を再利用できる
 
 const OtaniShouhei: TwoWayPlayer = {
   throwingSpeed: 165,
-  battingAverage: 0.286
+  battingAverage: 0.286,
 };
