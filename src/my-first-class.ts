@@ -8,6 +8,7 @@ class Person {
     this.name = name;
     this.age = age;
   }
+  //constructorにはvoid型も含めて型を書かない（言語仕様）
 
   profile(): string {
     return `name: ${this.name}, age: ${this.age}`;
