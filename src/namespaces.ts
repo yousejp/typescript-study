@@ -1,5 +1,24 @@
 export {};
 
+class PersonJP {
+  constructor(public name: string) {}
+}
+class PersonEN {
+  constructor(
+    public firstName: string,
+    public middleName: string,
+    public lastName: string
+  ) {}
+}
+namespace JapaneseTest {
+  // exportを書かなくてはいけない
+  export class Person {
+    constructor(public name: string) {}
+  }
+}
+const test = new JapaneseTest.Person('テスト');
+console.log(test.name);
+
 namespace Japanese {
   export namespace Tokyo {
     export class Person {
