@@ -12,8 +12,9 @@ export {};
 //   * 参照できない。
 
 class MyNumberCard {
-  private _owner: string;
-  private _secretNumber: number;
+  private _owner: string; // * 途中で変更できない。を満たすためprivateにする
+  private _secretNumber: number; // * 参照できない。を満たすためprivateにする
+  //上記はメンバー変数
 
   constructor(owner: string, secretNumber: number) {
     this._owner = owner;
@@ -23,6 +24,7 @@ class MyNumberCard {
   get owner() {
     return this._owner;
   }
+  // getをつけると参照できるようになる
 
   set secretNumber(secretNumber: number) {
     this._secretNumber = secretNumber;
@@ -34,11 +36,12 @@ class MyNumberCard {
 }
 
 let card = new MyNumberCard('はむさん', 1234567890);
+
 console.log(card.debugPrint());
 card.secretNumber = 1111111111;
 console.log(card.debugPrint());
-// card.owner = 'Ham';
+
+// card.owner = 'Ham'; // * 途中で変更できない。を満たす
 console.log(card.owner);
-// card.secretNumber;
-// card._secretNumber;
-console.log(card.secretNumber);
+
+// card._secretNumber; // * 参照できない。を満たす

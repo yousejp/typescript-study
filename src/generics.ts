@@ -11,6 +11,7 @@ export {};
 const echo = <T>(arg: T): T => {
   return arg;
 };
+// Tは抽象的な型（numberにもstringにもなる）Tというのはfor iのような慣習的
 
 console.log(echo<number>(100));
 console.log(echo<string>('Hello!'));

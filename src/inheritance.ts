@@ -11,6 +11,7 @@ class Animal {
 class Lion extends Animal {
   public speed: number;
 
+  // constructor(name: string, public speed: number) { でもできるが2重にpublicが宣言される
   constructor(name: string, speed: number) {
     super(name);
 
@@ -18,6 +19,7 @@ class Lion extends Animal {
   }
 
   run(): string {
+    // super.run()メソッドを呼び出せる（文字列が帰ってくる）
     return `${super.run()} ${this.speed}km/h.`;
   }
 }
@@ -26,5 +28,6 @@ class Lion extends Animal {
 // console.log(animal.run());
 // let lion = new Lion();
 // console.log(lion.run());
+
 console.log(new Animal('Mickey').run());
 console.log(new Lion('Simba', 80).run());

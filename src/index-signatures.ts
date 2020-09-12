@@ -2,7 +2,7 @@ export {};
 
 interface Profile {
   name: string;
-  underTwenty: boolean;
+  underTwenty: boolean; // 下記インデックスシグネチャーにbooleanがないとエラー
   [index: string]: string | number | boolean;
 }
 

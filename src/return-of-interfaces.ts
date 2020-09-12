@@ -5,6 +5,9 @@ class Souryo {}
 
 class Taro extends Mahotsukai {}
 
+// class Taro extends Mahotsukai, Souryo {}
+// 単一のクラスしか継承できない
+
 interface Kenja {
   ionazun(): void;
 }
