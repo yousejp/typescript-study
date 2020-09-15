@@ -7,6 +7,7 @@ const debugProfile = (name: string, age: number) => {
 debugProfile('Ham', 43);
 
 type Profile = Parameters<typeof debugProfile>;
+// Parametersは関数の引数を配列の型として定義できる
 
 const profile: Profile = ['Gloria', 76];
 
